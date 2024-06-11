@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- font awesome chn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+  </head>
+  <body>
+    <!-- Header starts -->
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">De Jesus</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mis-vis">Mission & Vision</a></li>
+            <li><a href="#outputs">Outputs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">De Jesus</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#mis-div" onclick="toggleMenu()">Mission & Vision</a></li>
+            <li><a href="#outputs" onclick="toggleMenu()">Outputs</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header ends -->
+
+    <!-- profile starts -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/mypic.png" alt="profile pic" width="500px" height="500px">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Catherine Jade</h1>
+        <p class="section__text__p2">I'm studying BSCS (Bachelor of Science in Computer Science) in University of Cabuyao(UC), 
+          located at Cabuyao, Laguna, Philippines.</p>
+        
+        <div id="socials-container">
+          <img
+            src="assets/Facebook.jpg"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/jade.dejesus.752'"
+          />
+          <img
+            src="assets/Instagram.jpg"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/jadestoneey/'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- profile ends -->
+
+    <!-- about starts -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/mypic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Year Level</h3>
+              <p>1st Year Standing</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Science in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hey everyone!, I'm Catherine Jade Monterozo De Jesus, and I'm thrilled to be starting my
+              journey as a first-year student in Bachelor of Science in Computer Science (BSCS). At 22 
+              years old, I'm diving into the world of technology headfirst, living in the vibrant Mabuhay City
+              in Mamatid, Cabuyao Laguna. Ever since I can remember, I've been fascinated by
+              computers and software, and my ultimate goal is to become a software engineer. There's
+              something incredibly satisfying about the idea of creating innovative solutions through
+              code. I spend my days devouring programming languages and exploring the intricacies of
+              algorithms. With each line of code I write, I'm getting closer to my dream of making a 
+              difference in the tech world. It's an exhilarating journey, and I can't wait to see where it takes me.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#mis-vis'"
+      />
+    </section>
+    <!-- about ends -->
+
+    <!-- mis-vis starts -->
+    <section id="mis-vis">
+
+      <h1 class="title">Mission & Vision</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Mission</h2>
+            <p>As an institution of higher learning, UC (PnC) is committed to equip individuals with knowledge, skills, and
+               values that will enable them to achieve their professional goals & provide leadership and service for national development.</p>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Vision</h2>
+            <p>A premier institution of higher learning in Region IV, developing globally-competitive and value-laden 
+              professionals and leaders instrumental to community development and nation-building.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href=' #outputs'"
+      />
+    </section>
+    <!-- mis-vis ends -->
+
+    <!-- outputs starts -->
+    <section id="outputs">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Outputs</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/prelim.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='/files/Prelim Outputs.pdf'"
+             >
+                Click Here!
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/midterm.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='/files/Midterm Output.pdf'">
+                Click Here!
+              </button>
+            
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/finals.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='/files/Finals Output.pdf'"
+              >
+                Click Here!
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <!-- outputs ends -->
+
+    <!-- contacts starts -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">cathdejesus0514@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- contacts ends -->
+
+     <!-- footer starts -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mis-vis">Mission & Vision</a></li>
+            <li><a href="#outputs">Outputs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 De Jesus. All Rights Reserved.</p>
+    </footer>
+    <!-- footer starts -->
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
